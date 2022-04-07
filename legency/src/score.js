@@ -4,8 +4,8 @@ const worker = createWorker();
 
 async function transformImageToText(image) {
   await worker.load();
-  await worker.loadLanguage('equ');
-  await worker.initialize('equ');
+  await worker.loadLanguage('eng');
+  await worker.initialize('eng');
   await worker.setParameters({
     tessedit_char_whitelist: '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ.%',
   });
